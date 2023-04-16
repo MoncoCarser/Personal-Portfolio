@@ -1,5 +1,18 @@
+
+:root {
+  --primary-color: rgb(255, 92, 92);
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
+  --on-primary: rgb(250, 250, 250);
+  --on-background: rgb(66, 66, 66);
+  --on-background-alt: rgba(66, 66, 66, 0.7);
+  --background: rgb(255, 255, 255);
+  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +22,32 @@ body {
   display: flex;
   align-items: center;
 /*font family to be added*/
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  position: relative;
+}
+
+/* Navigation */
+nav {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+  letter-spacing: 3px;
+  padding: 25px;
+  width: 100vw;
+  background: rgb(0 0 0 / 10%);
 }
 
 /* Video Background */
@@ -23,7 +62,29 @@ body {
 video {
   position: absolute;
   object-fit: cover;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-background-image.jpg');
+  background-size: cover;
+}
+
+/* Contact Section */
+.fa-brands {
+  font-size: 100px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.fa-brands:hover {
+  color: var(--on-background);
 }
