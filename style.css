@@ -48,7 +48,6 @@ nav {
   font-size: 24px;
   letter-spacing: 4px;
   padding: 25px;
-/*  width: 100%;*/
   overflow-x: hidden;
   background: rgb(0 0 0 / 10%);
 }
@@ -81,15 +80,6 @@ a:focus {
   z-index: -2;
 }
 
-/*.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}*/
-
 video {
   position: absolute;
   object-fit: cover;
@@ -108,16 +98,6 @@ video {
   z-index: 0;
  transform: translate(0%, 0%);
 }
-
-/*.video-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}*/
 
 .text-box {
   position: relative;
@@ -158,6 +138,27 @@ p {
   flex-direction: row;
 }
 
+.project-container {
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.project-image {
+/*    issues here still*/
+  height: 200px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
 .contact-container form {
   display: flex;
   background-color: white;
@@ -166,7 +167,8 @@ p {
 }
 
 /* Contact Section */
-.fa-brands {
+.fa-brands, 
+.fa-solid {
   font-size: 70px;
   margin-right: 50px;
   cursor: pointer;
@@ -174,7 +176,7 @@ p {
   z-index: 10;
 }
 
-.fa-brands:hover {
+.fa-brands:hover, .fa-solid:hover {
   color: var(--tertiary-color);
 }
 
