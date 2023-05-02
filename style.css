@@ -309,6 +309,10 @@ button:focus {
   z-index: 10;
 }
 
+.social-icons a {
+  border-bottom: none;
+}
+
 .fa-brands:hover, .fa-solid:hover {
   color: var(--tertiary-color);
 }
