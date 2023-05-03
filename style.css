@@ -72,18 +72,18 @@ a:focus {
 
 /* Video Background */
 .video-background {
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   z-index: -2;
 }
 
 video {
   position: absolute;
   object-fit: cover;
-  top: 40%;
+/*  top: 40%;*/
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -92,9 +92,9 @@ video {
   position: absolute;
   left: 0;
   top: 0;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 0;
  transform: translate(0%, 0%);
 }
@@ -123,7 +123,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  transform: translate(0%, -135%);
+/*  transform: translate(0%, -135%);*/
 }
 
 .presentation-container img {
@@ -141,6 +141,16 @@ p {
   flex-direction: row;
 }
 
+/* Contact Section */
+.fa-brands, 
+.fa-solid {
+  font-size: 70px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: var(--primary-color);
+  z-index: 10;
+}
+
 .projects-container {
   display: flex;
   flex-direction: row;
@@ -150,17 +160,15 @@ p {
 }
 
 .project-container  {
-  width: 50%;
+/*  width: 100%;*/
   height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
 }
 
 .project-container img {
-
 /*  padding: 20px;*/
 /*  padding-bottom: 0;*/
   width: 20rem;
@@ -172,11 +180,21 @@ p {
   width: 90%;
 }
 
+.project-container h2 {
+  font-size: 1.5rem;
+/*  text-align: left;*/
+}
+
+.project-container p {
+  font-size: 1rem;
+}
+
 .programming-language-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
+  font-size: 20px;
 }
 
 /*
@@ -297,16 +315,6 @@ button:focus {
   display: flex;
   justify-content: center;
   color: black;
-}
-
-/* Contact Section */
-.fa-brands, 
-.fa-solid {
-  font-size: 70px;
-  margin-right: 50px;
-  cursor: pointer;
-  color: var(--primary-color);
-  z-index: 10;
 }
 
 .social-icons a {
