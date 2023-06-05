@@ -46,19 +46,19 @@ section {
 }
 
 .background-color-1 {
-  background-color: lightblue;
+  background-color: var(--background);
 }
 
 .background-color-2 {
   width: 100vw;
   min-height: 100vh;
-  background-color: darkgreen;
+  background-color: var(--background);
 }
 
 .background-color-3 {
   width: 100vw;
   min-height: 100vh;
-  background-color: lightgreen;
+  background-color: var(--background);
 }
 
 /* Navigation */
@@ -264,7 +264,7 @@ p {
 
   width: 480px;
   height: 550px;
-  background: white;
+  background: red;
   display: flex;
   flex-direction: column;
   align-items: center;
